@@ -6,7 +6,7 @@
 </head>
 <center>
 <style>
-canvas { background: teal; border:2px solid white; }
+canvas { background: black; border:2px solid white; }
 html { background-color:teal; color:white; }
 big { font-size:90px; }
 </style>
@@ -61,14 +61,14 @@ function keyUpHandler(e) {
 function drawBall() {
     ctx.beginPath();
     ctx.arc(x, y, ballRadius, 0, Math.PI*2);
-    ctx.fillStyle = "#0095DD";
+    ctx.fillStyle = "lime";
     ctx.fill();
     ctx.closePath();
 }
 function drawPaddle() {
     ctx.beginPath();
     ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
-    ctx.fillStyle = "#0095DD";
+    ctx.fillStyle = "red";
     ctx.fill();
     ctx.closePath();
 }
